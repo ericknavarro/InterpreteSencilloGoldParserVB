@@ -5,7 +5,7 @@
 - Material de Apoyo
   - Creado por: Luis Lizama, Erick Navarro
   - Fecha publicación: Agosto 2019
-  - Publicación en Blog: https://ericknavarro.github.io/2019/08/07/21-Interprete-sencillo-utilizando-GOLD-Parser-y-Visual-Basic/
+  - Publicación en blog: https://ericknavarro.github.io/2019/08/07/21-Interprete-sencillo-utilizando-GOLD-Parser-y-Visual-Basic/
 
 ## Herramientas utilizadas
 - Gold Parser Builder: Generador de analizadores léxicos y sintácticos diseñado para funcionar en múltiples lenguajes de programación.
