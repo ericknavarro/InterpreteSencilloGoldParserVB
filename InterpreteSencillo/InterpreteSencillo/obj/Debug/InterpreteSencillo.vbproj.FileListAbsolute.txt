@@ -1,0 +1,12 @@
+C:\Users\Luis\Desktop\Interprete Sencillo\InterpreteGP\InterpreteSencillo\InterpreteSencillo\bin\Debug\InterpreteSencillo.exe.config
+C:\Users\Luis\Desktop\Interprete Sencillo\InterpreteGP\InterpreteSencillo\InterpreteSencillo\bin\Debug\InterpreteSencillo.exe
+C:\Users\Luis\Desktop\Interprete Sencillo\InterpreteGP\InterpreteSencillo\InterpreteSencillo\bin\Debug\InterpreteSencillo.pdb
+C:\Users\Luis\Desktop\Interprete Sencillo\InterpreteGP\InterpreteSencillo\InterpreteSencillo\bin\Debug\InterpreteSencillo.xml
+C:\Users\Luis\Desktop\Interprete Sencillo\InterpreteGP\InterpreteSencillo\InterpreteSencillo\obj\Debug\InterpreteSencillo.vbprojAssemblyReference.cache
+C:\Users\Luis\Desktop\Interprete Sencillo\InterpreteGP\InterpreteSencillo\InterpreteSencillo\obj\Debug\InterpreteSencillo.Resources.resources
+C:\Users\Luis\Desktop\Interprete Sencillo\InterpreteGP\InterpreteSencillo\InterpreteSencillo\obj\Debug\InterpreteSencillo.vbproj.GenerateResource.cache
+C:\Users\Luis\Desktop\Interprete Sencillo\InterpreteGP\InterpreteSencillo\InterpreteSencillo\obj\Debug\InterpreteSencillo.vbproj.CoreCompileInputs.cache
+C:\Users\Luis\Desktop\Interprete Sencillo\InterpreteGP\InterpreteSencillo\InterpreteSencillo\obj\Debug\InterpreteSencillo.vbproj.CopyComplete
+C:\Users\Luis\Desktop\Interprete Sencillo\InterpreteGP\InterpreteSencillo\InterpreteSencillo\obj\Debug\InterpreteSencillo.exe
+C:\Users\Luis\Desktop\Interprete Sencillo\InterpreteGP\InterpreteSencillo\InterpreteSencillo\obj\Debug\InterpreteSencillo.xml
+C:\Users\Luis\Desktop\Interprete Sencillo\InterpreteGP\InterpreteSencillo\InterpreteSencillo\obj\Debug\InterpreteSencillo.pdb

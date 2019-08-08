@@ -1,0 +1,59 @@
+"Name"    = 'Mi Primer Proyecto en Gold Parser'
+"Author"  = 'Luis Lizama'
+"Version" = '1.0' 
+"About"   = 'Ejemplo de un interprete sencillo'
+
+"Case Sensitive" = False 
+"Start Symbol"   = <Ini>
+
+!------Expresiones Regulares
+ENTERO = {Digit}+
+DECIMAL = {Digit}+'.'{Digit}+
+{Car} = {Printable} - ["]
+CADENA  = '"' {Car}* '"'
+{ID Head} = {Letter} + [_]
+{ID Tail} = {AlphaNumeric} + [_]
+ID = {ID Head} {ID Tail}* 
+
+!-----Comentarios
+Comment Line = '//'
+Comment Start = '/*'
+Comment End = '*/'
+
+!---- Gramatica
+
+<Ini> ::= <Instrucciones>
+       
+<Instrucciones> ::= <Instrucciones> <Instruccion>
+                   | <Instruccion>
+
+<Instruccion> ::= 'imprimir' '(' <Exp_Cadena> ')' ';'
+               | 'mientras' '(' <Exp_Logica> ')' '{' <Instrucciones>'}'
+               | 'if' '(' <Exp_Logica> ')' '{' <Instrucciones>'}'
+               | 'if' '(' <Exp_Logica> ')' '{' <Instrucciones>'}' 'else' '{' <Instrucciones>'}'
+               | 'numero' ID ';'
+               |  ID '=' <Exp_numerica> ';'
+
+<Exp_Logica> ::= <Exp_numerica> '<' <Exp_numerica>
+               | <Exp_numerica> '>' <Exp_numerica>              
+
+<Exp_Cadena> ::= <Exp_Cadena> '&' <Exp_Cadena>
+               | CADENA
+               | <Exp_numerica>
+
+               
+<Exp_numerica>   ::= <Exp_numerica> '+' <Mult Exp> 
+                 | <Exp_numerica> '-' <Mult Exp> 
+                 | <Mult Exp> 
+
+<Mult Exp>    ::= <Mult Exp> '*' <Negate Exp> 
+                | <Mult Exp> '/' <Negate Exp> 
+                | <Negate Exp> 
+
+<Negate Exp>  ::= '-' <Value> 
+                | <Value> 
+
+<Value>       ::= ENTERO 
+                | DECIMAL 
+                | ID
+                | '(' <Exp_numerica> ')'
