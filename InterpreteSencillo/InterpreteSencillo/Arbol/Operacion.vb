@@ -52,7 +52,14 @@ Public Class Operacion
     Public Function ejecutar(ts As TablaSimbolos) As Object Implements Instruccion.ejecutar
 
         If tipo = Tipo_operacion.DIVISION Then
-            Return Double.Parse(operadorIzq.ejecutar(ts)) / Double.Parse(operadorDer.ejecutar(ts))
+             Dim op_izq = operadorIzq.ejecutar(ts)
+            Dim op_der = operadorDer.ejecutar(ts)
+
+            If Double.Parse(op_der) = 0 Then
+                Console.WriteLine("No se puede dividir entre 0. Division no aceptada: {0:G}/{1:G}", op_izq, op_der)
+            Else
+                Return Double.Parse(op_izq) / Double.Parse(op_der)
+            End If
         ElseIf tipo = Tipo_operacion.MULTIPLICACION Then
             Return Double.Parse(operadorIzq.ejecutar(ts)) * Double.Parse(operadorDer.ejecutar(ts))
         ElseIf (tipo = Tipo_operacion.RESTA) Then
